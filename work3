@@ -17,8 +17,8 @@ console.log( 'others' );
 else {
 if(val = e){
 console.log( 'others' );
-}
 break;
+}
 else {
 console.log( 'unknown' );
 }
