@@ -16,27 +16,17 @@ console.log( '2,3' );
  */
 
 var a = 0;
-switch (a) {
-case 0:
-    console.log( 0 );
-<<<<<<< HEAD
+switch(a){
+    case 0 :
+        console.log( 0 );
     break;
-=======
-    break;   
->>>>>>> db2fad07e62e8e1d9f6db6d98c26f83c6a058e4e
-case 1:
-    console.log( 1 );
+    case 1 :
+        console.log( 1 );
     break;
-case 2:
-    console.log( '2,3' );
+    case 2 :
+        console.log( '2,3' );
     break;
-case 3:
-    console.log( '2,3' );
-<<<<<<< HEAD
+    case 3 :
+        console.log( '2,3' );
     break;
 }
-
-=======
-     break;
-}
->>>>>>> db2fad07e62e8e1d9f6db6d98c26f83c6a058e4e
