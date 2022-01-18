@@ -19,7 +19,11 @@ var a = 0;
 switch (a) {
 case 0:
     console.log( 0 );
+<<<<<<< HEAD
     break;
+=======
+    break;   
+>>>>>>> db2fad07e62e8e1d9f6db6d98c26f83c6a058e4e
 case 1:
     console.log( 1 );
     break;
@@ -28,6 +32,11 @@ case 2:
     break;
 case 3:
     console.log( '2,3' );
+<<<<<<< HEAD
     break;
 }
 
+=======
+     break;
+}
+>>>>>>> db2fad07e62e8e1d9f6db6d98c26f83c6a058e4e
