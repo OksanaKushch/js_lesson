@@ -6,11 +6,11 @@
 let n=1000;
 let n1=n/2;
 let num=1;
-for (i = 0; i = num; i++) {
- if (n1/2 > 50) {
-   n1=n1/2;
-   num= num++;
+for (let i = 0; i < num; i++) {
+ if (n1 > 50) {
+   n1= n1/2;
+   num++;
     };
- };
+   };
  console.log(n1);
- console.log(k);
+ console.log(num);
