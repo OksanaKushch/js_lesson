@@ -8,12 +8,16 @@ f(1,2,3); // 6
 f(1,1,1,1,1,1,1,1); // 8
 f(1,2,'s',4); // Error: all parameters type should be a Number
 ```*/
-function f(num) {
-    let result;
-    if (typeof num === 'number'){
-        result = num * num * num;
-    } else {
-        throw new Error('Error: parameter type is not a Number')
-    }
-    return result;
-};
+function f(...rest) {
+	var arr=rest;
+    var n=arr.length;
+console.log(arr, n);
+    var sum = arr[0];
+       for(var i=1; i < n; i++){sum= sum+arr[i];};
+    console.log(sum);
+}
+
+
+f(1,2,3,4);
+f(1,1,1,1,1,1,1,1);
+//f(1,2,'s',4);
