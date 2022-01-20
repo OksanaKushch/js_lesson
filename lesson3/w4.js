@@ -14,13 +14,13 @@ f('1'); // Error: parameter type is not a Number
 function f(num) {
     let result;
     if (typeof num === 'number' && num > 0 && num < 8){
-         if (num === 1) {result = "Понедельник"} ;
-         if (num === 2) {result = "Вторник"};
-         if (num === 3) {result = "Среда"};
-         if (num === 4) {result = "Четверг"};
-         if (num === 5) {result = "Пятница"};
-         if (num === 6) {result = "Суббота"};
-         if (num === 7) {result = "Воскресенье"};
+         if (num === 2) {result = "Понедельник"} ;
+         if (num === 3) {result = "Вторник"};
+         if (num === 4) {result = "Среда"};
+         if (num === 5) {result = "Четверг"};
+         if (num === 6) {result = "Пятница"};
+         if (num === 7) {result = "Суббота"};
+         if (num === 1) {result = "Воскресенье"};
     } else {
         if (typeof num != 'number'){throw new Error('Error: parameter type is not a Number')
         }  else {
