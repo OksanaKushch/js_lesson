@@ -29,7 +29,10 @@ function isPositive(num) {
     }
     return result;
 };
-
-
-
-console.log(isPositive(0))
+var Arrpoz = [];
+for(let n of arr){
+    if(isPositive(n)){
+        Arrpoz.push(n);
+    }
+}
+console.log(Arrpoz);
