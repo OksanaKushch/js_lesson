@@ -9,3 +9,17 @@ isEven(3); // false
 isEven(4); // true
 isEven('Content'); // Error: parameter type is not a Number
 ```*/
+function isEven(num) {
+    let result;
+    if (typeof num === 'number'){
+        if(num % 2 === 0){
+            result = true;
+                  } else {result = false;}
+        } else {
+        throw new Error('Error: parameter type is not a Number')
+    }
+    return result;
+};
+console.log(isEven(3));
+console.log(isEven(4));
+console.log(isEven('Content'));
