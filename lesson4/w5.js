@@ -13,3 +13,4 @@ const arr = [1,2,3];
 const acc = 0;
 reduce(arr, function(acc, item, i, arr) {}, acc);
 ```*/
+
