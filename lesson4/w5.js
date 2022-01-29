@@ -22,11 +22,11 @@ function reduce(arr, f, acc ){
                 throw new Error('Третий параметр обязателен и может принимать только строку или число')}
                                 for (let i = 0; i < arr.length; i++) {
                        f(acc, arr[i], i, arr);
-                       acc = acc + arr[i]
+                       acc = acc + arr[i]; 
                     }
                     return acc;
                   };
             
 const arr = [1,2,3];
 const acc = 0;
-console.log(reduce(arr, function(acc, item, i, arr){console.log(acc)}, acc))
+console.log(reduce(arr, function(acc, item, i, arr){acc}, acc))
