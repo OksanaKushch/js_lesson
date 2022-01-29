@@ -18,7 +18,7 @@ function reduce(arr, f, acc ){
         throw new Error('Первый параметр обязателен и может принимать только массив')}
         if (typeof f != "function"){ 
             throw new Error('Второй параметр обязателен и может принимать только функцию')}
-            if (typeof acc != ("number" || "string")  ){ 
+            if (typeof(acc) !== "number" && typeof(acc) !== "string"  ){ 
                 throw new Error('Третий параметр обязателен и может принимать только строку или число')}
                                 for (let i = 0; i < arr.length; i++) {
                        f(acc, arr[i], i, arr);
@@ -28,5 +28,5 @@ function reduce(arr, f, acc ){
                   };
             
 const arr = [1,2,3];
-const acc = 0;
+const acc =0;
 console.log(reduce(arr, function(acc, item, i, arr){acc}, acc))
